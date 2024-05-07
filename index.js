@@ -3,6 +3,7 @@
 let isModalOpen = false;
 let constrastToggle = false;
 const scaleFactor = 1 / 20;
+let currentYear;
 
 //MOUSE MOVE EVENT
 
@@ -24,6 +25,7 @@ function toggleContrast(){
     constrastToggle = !constrastToggle;
     if(constrastToggle){
         document.body.classList += " dark-theme";
+
     }
     else{
         document.body.classList.remove("dark-theme");
@@ -68,3 +70,13 @@ function toggleModal(){
     isModalOpen = true;
     document.body.classList += " modal--open";
 }
+
+// GET CURRENT YEAR
+
+function getCurrentYear(){
+  const year = document.querySelector(".year");
+  currentYear = new Date().getFullYear();
+  year.innerHTML = currentYear;
+}
+
+getCurrentYear();
