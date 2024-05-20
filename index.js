@@ -81,6 +81,3 @@ function getCurrentYear(){
 
 getCurrentYear();
 
-//HOVER EFFECT ON MOBILE
-
-document.addEventListener("touchstart", function(){}, true);
