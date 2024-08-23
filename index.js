@@ -33,7 +33,7 @@ function toggleContrast(){
     
 }
 
-//EMAI SERVICE ON MODAL
+//EMAIL SERVICE ON MODAL
 
 function contact(event) {
   event.preventDefault();
